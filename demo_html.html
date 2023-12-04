@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!-- 写一个web页面，包括表格，表格字段有id、名称、性别、大小，再生成7条假数据。筛选框有id、开始时间、结束时间、类型，包含分页每20条为一页，然后整体优化一下样式，我喜欢偏蓝色系风格 -->
+
+<body>
+    <!-- 筛选框有id、开始时间、结束时间、类型 -->
+    <form>
+        <input type="text" name="id" placeholder="id">
+        <input type="text" name="start_time" placeholder="开始时间">
+        <input type="text" name="end_time" placeholder="结束时间">
+        <input type="text" name="type" placeholder="类型">
+        <input type="submit" value="查询">
+    </form>
+    <!-- 表格，表格字段有id、名称、性别、大小，再生成7条假数据 -->
+    <table>
+        <tr>
+            <th>id</th>
+            <th>名称</th>
+            <th>性别</th>
+            <th>大小</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张三</td>
+            <td>男</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>李四</td>
+            <td>男</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>王五</td>
+            <td>男</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>赵六</td>
+            <td>男</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>小七</td>
+            <td>男</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>小八</td>
+            <td>男</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>小九</td>
+            <td>男</td>
+            <td>120</td>
+        </tr>
+    </table>
+
+    <!-- 分页每20条为一页 -->
+    <div>
+        <a href="#">上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">下一页</a>
+    </div>
+    
+    <!-- 优化一下页面样式，偏蓝色风格色系 -->
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        form {
+            width: 100%;
+            margin: 0 auto;
+        }
+        input {
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        div {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+
+
+</body>
