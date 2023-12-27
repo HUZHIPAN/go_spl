@@ -15,7 +15,7 @@ func generateMapSumNode() *MapSumNode {
 	return &tn
 }
 
-
+// 审查代码
 func Constructor_() MapSum {
 	m := MapSum{}
 	m.root = generateMapSumNode()
